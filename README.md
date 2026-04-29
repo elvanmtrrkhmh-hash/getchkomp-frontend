@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# GetchKomp Frontend
 
-## Project info
+Welcome to the frontend repository for the **GetchKomp** e-commerce platform (Tech Komputer Hub). This application provides a modern, responsive, and dynamic user interface for a computer hardware and accessories store.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Tech Stack
 
-## How can I edit this code?
+This project is built with a modern frontend stack to ensure high performance, type safety, and great developer experience:
 
-There are several ways of editing your application.
+- **Framework**: [React 18](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Routing**: [React Router DOM](https://reactrouter.com/)
+- **State Management & Data Fetching**: [TanStack React Query](https://tanstack.com/query/latest)
+- **Form Handling**: [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/)
 
-**Use Lovable**
+## ✨ Key Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Dynamic Homepage**: Features hero banners, product highlights, and categories fetched dynamically from the backend API.
+- **Product Catalog & Variants**: Browse products and select mandatory variants (color, panel, refresh rate) before adding to cart.
+- **Shopping Cart & Checkout**: Integrated checkout process linked directly to the backend order API and payment gateway (Xendit).
+- **Wishlist Management**: Global wishlist state allowing users to easily save favorite products.
+- **Blog & Articles**: Read tech articles and news with dynamic category and tag metadata.
+- **Responsive Design**: Fully responsive layout optimized for mobile, tablet, and desktop viewing.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Getting Started
 
-**Use your preferred IDE**
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd tech-komputer-hub-main
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. **Environment Setup:**
+   Create a `.env` file in the root directory based on `.env.example` (if available) or add the necessary environment variables.
+   
+   Example `.env` configuration:
+   ```env
+   VITE_API_URL=http://localhost:8000
+   ```
+   *(Ensure the backend API is running on port 8000 or update the URL accordingly)*
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   By default, the Vite development server will run on `http://localhost:8080` (or `http://localhost:5173` depending on configuration).
 
-**Edit a file directly in GitHub**
+## 📜 Available Scripts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+In the project directory, you can run:
 
-**Use GitHub Codespaces**
+- `npm run dev`: Runs the app in the development mode.
+- `npm run build`: Builds the app for production to the `dist` folder.
+- `npm run lint`: Runs ESLint to catch code quality issues.
+- `npm run preview`: Locally preview the production build.
+- `npm test`: Runs Vitest for unit and integration testing.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🤝 Contributing
 
-## What technologies are used for this project?
+When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
-This project is built with:
+## 📄 License
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is proprietary and confidential. Unauthorized copying of this file, via any medium is strictly prohibited.
